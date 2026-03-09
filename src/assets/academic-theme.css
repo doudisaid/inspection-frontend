@@ -1,0 +1,47 @@
+/* --- أزرار التبويب (Tabs Control) --- */
+
+.page-control-header {
+    display: flex;
+    gap: 5px;
+    padding: 0 10px;
+    direction: rtl; /* ضمان الاتجاه الصحيح للتبويبات */
+    margin: 12px 5px 0 15px;
+}
+
+.tab-button {
+    padding: 8px 25px;
+    border: 1px solid #e2e8f0;
+    border-bottom: none;
+    background: #f8fafc;
+    cursor: pointer;
+    border-radius: 10px 10px 0 0;
+    font-family: 'Cairo', sans-serif;
+    transition: all 0.3s ease;
+    color: #64748b;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    outline: none;
+}
+
+/* حالة الزر النشط (Active Tab) */
+.tab-button.active {
+    background: white;
+    color: #764ba2;
+    font-weight: bold;
+    padding-bottom: 12px;
+    margin-top: -5px;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.05);
+    border-top: 2px solid #764ba2;
+}
+
+/* تأثير التمرير (Hover) للتبويبات غير النشطة */
+.tab-button:hover:not(.active) {
+    background: #f1f5f9;
+    color: #4a5568;
+}
+
+/* تنسيق الأيقونات داخل الأزرار */
+.tab-button svg {
+    font-size: 1rem;
+}

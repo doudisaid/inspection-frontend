@@ -1,0 +1,109 @@
+/* تعريف خط Cairo بجميع الأوزان */
+
+@font-face {
+  font-family: 'Cairo';
+  src: url('../assets/fonts/Cairo-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cairo';
+  src: url('../assets/fonts/Cairo-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cairo';
+  src: url('../assets/fonts/Cairo-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cairo';
+  src: url('../assets/fonts/Cairo-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* تعريفات إضافية لتحسين التوافق */
+@font-face {
+  font-family: 'Cairo';
+  src: url('../assets/fonts/Cairo-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cairo';
+  src: url('../assets/fonts/Cairo-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+:root {
+
+  --Prussian-blue: #003153;    
+  --Midnight-blue: #191970;    
+  --DarkSlate-blue: #2f4f4f;    
+  --strong-blue: #0c3852fa;    /* أزرق احترافي */
+  --primary: #2563EB;    /* أزرق احترافي */
+  --primary-min: #5490d9;     
+  --secondary: #10B981;   /* أخضر هادئ */
+  --accent: #F59E0B;      /* برتقالي ذكي */
+  --danger: #EF4444; 
+  --danger-min: #d96a70;     /* أحمر تنبيهات */
+  --dark: #0F172A;        /* داكن أنيق */
+  --light: #F8FAFC;       /* خلفيات فاتحة */
+  --muted: #64748B;       /* نصوص ثانوية */
+  --white: #fff;
+  --gray: #ddd;
+  --header-color: #38BDF8;
+  --toggle-gradient: linear-gradient(45deg, #7096ff, #b69eff, #ff9ecd);
+  --color-bagtitle: linear-gradient(45deg,#f7f738 , #fa4d4d,#f5f5cf);
+  --color-primary-gradient: linear-gradient(45deg, #2c7be5, #ff0000);
+  --color-secondary-gradient: linear-gradient(45deg, #6c757d, #7d848c);
+  --color-success-gradient: linear-gradient(45deg, #28a745, #34b75b);
+  --color-danger-gradient: linear-gradient(45deg, #dc3545, #d96a70);
+
+  --color-primary-fade: linear-gradient(45deg, #5490d9, #e6f0fb);
+  --color-secondary-fade: linear-gradient(45deg, #7d848c, #f0f1f3);
+  --color-success-fade: linear-gradient(45deg, #34b75b, #e6f9ed);
+  --color-danger-fade: linear-gradient(45deg, #d96a70, #fde6e8);
+
+
+  --bg-main: #f8f9fa;
+  --text-main: #212529;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+} 
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: "Cairo",sans-serif;
+  background-color: var(--bg-main);
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 ;
+}

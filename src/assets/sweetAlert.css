@@ -1,0 +1,76 @@
+/* ======================
+   Compact Toast Common
+   ====================== */
+/* Compact Toast مع ارتفاع أكبر */
+.swal-toast-compact {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.4rem;
+  min-height: 2.2rem !important; /* تم زيادة الارتفاع قليلاً */
+  padding: 0.5rem 0.8rem !important; /* زيادة padding قليلًا */
+  border-radius: 8px !important;
+  font-family: "Cairo", "Segoe UI", Tahoma, sans-serif;
+  font-size: 0.85rem;
+}
+
+/* Icon */
+.swal-toast-compact .swal2-icon {
+  width: 1.2rem !important;
+  height: 2rem !important;
+  margin: 0 !important;
+  flex-shrink: 0;
+}
+
+.swal-toast-compact .swal2-icon-content {
+  font-size: 1.5rem !important; /* تكبير العلامة */
+  font-weight: bold !important;
+  line-height: 1 !important;
+}
+
+/* Title */
+.swal-toast-compact .swal2-title {
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1.2 !important;
+  white-space: nowrap;
+}
+
+
+.swal-toast-compact .swal2-icon-content {
+  font-size: 1.5rem !important; /* تكبير العلامة */
+  font-weight: bold !important;
+  line-height: 1 !important;
+}
+
+/* Title */
+.swal-toast-compact .swal2-title {
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1.2 !important;
+  white-space: nowrap;
+}
+
+/* ===== Colors by type ===== */
+.swal-toast-success {
+  background: #dcfce7 !important; /* أخضر فاتح */
+  color: #166534 !important;      /* أخضر داكن */
+  border: 1px solid #86efac !important;
+}
+
+.swal-toast-error {
+  background: #fee2e2 !important; /* أحمر فاتح */
+  color: #991b1b !important;      /* أحمر داكن */
+  border: 1px solid #fca5a5 !important;
+}
+
+.swal-toast-warning {
+  background: #fff7ed !important; /* برتقالي فاتح */
+  color: #c2410c !important;      /* برتقالي داكن */
+  border: 1px solid #fed7aa !important;
+}
+
+.swal-toast-info {
+  background: #e0f2fe !important; /* أزرق فاتح */
+  color: #0369a1 !important;      /* أزرق داكن */
+  border: 1px solid #7dd3fc !important;
+}
